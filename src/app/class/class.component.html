@@ -1,0 +1,6 @@
+<div *ngFor="let classe of classes" style="text-align: center; padding-top: 5em">
+    <h2>
+      <a [routerLink]="['/classes',classe.id]" routerLinkActive="" class="routerLinkActive">
+        {{ classe.title | titlecase}}</a>
+    </h2>
+</div>
